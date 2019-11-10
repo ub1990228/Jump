@@ -11,13 +11,13 @@ if __name__ == '__main__':
     # 创建一个空白的图像对象
     figure = plt.figure()
     # "重新"按钮的位置大小
-    reelect_button_position = plt.axes([0.79, 0.8, 0.1, 0.08])
+    reelect_button_position = plt.axes(figure, [0.79, 0.8, 0.1, 0.08])
     # 按钮背景图片
     m = numpy.array(PIL.Image.open('image/bt.png'))
     # 设置重新按钮图片
     reelect_button = Button(reelect_button_position, label='', image=m)
     # "自动"按钮的位置大小
-    auto_button_position = plt.axes([0.79, 0.65, 0.1, 0.08])
+    auto_button_position = plt.axes(figure, [0.79, 0.65, 0.1, 0.08])
     # 按钮背景图片
     m1 = numpy.array(PIL.Image.open('image/bt1.png'))
     # 设置重新按钮图片
